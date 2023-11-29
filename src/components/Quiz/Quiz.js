@@ -6,25 +6,28 @@ import quizData from "../../data/quiz.json";
 import QuizCard from "./QuizCard.js";
 import QuizResult from "./QuizResult.js";
 import useBgRandom from "../../hooks/useBgRandom.js";
-import "./quiz.css";
+import DetailedQuizView from "./DetailedQuizView.js";
+import QuizCarousel from "./QuizCarousel.js";
 
 export default function Quiz() {
   const [showResult, setShowResult] = useState(false);
   const [questionId, setQuestionId] = useState(0);
   const [score, setScore] = useState(0);
+  const [questionsToShow, setQuestionsToShow] = useState(10);
   const handleBgChange = useBgRandom();
-
   const quizLength = quizData.length;
 
   const handleAnswer = isCorrect => {
     if (isCorrect) setScore(score + 1);
 
     const newQuestionId = questionId + 1;
-    (newQuestionId < quizLength) 
-      ? setQuestionId(newQuestionId)
-      : setShowResult(true);
+    setQuestionId(newQuestionId);
 
-      handleBgChange();
+    if (newQuestionId >= questionsToShow) {
+      setShowResult(true);
+    }
+
+    handleBgChange();
   }
 
   const handleReset = () => {
@@ -34,18 +37,23 @@ export default function Quiz() {
   };
 
   return (
-    <Container aria-label="Quiz">
+    <Container aria-label="Quiz" className="text-center">
       <Row className="justify-content-md-center">
         {showResult 
-          ? (<QuizResult
+          ? (<>
+          <QuizResult
               score={score}
               quizLength={quizLength}
-              handleReset={handleReset} />) 
+              handleReset={handleReset} />
+              <QuizCarousel quizData={quizData} />
+              </>
+              )
           : (<QuizCard
               quizData={quizData}
               questionId={questionId}
-              quizLength={quizLength}
-              handleAnswer={handleAnswer} />)
+              quizLength={questionsToShow}
+              handleAnswer={handleAnswer} />
+              )
         }
       </Row>
     </Container>

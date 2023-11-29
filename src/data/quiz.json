@@ -1,109 +1,222 @@
 [
     {
         "id": "1",
-        "question": "Which of the following are the advantages of React.js?",
+        "question": "Quels sont les avantages de React.js parmi les suivants ?",
         "options": [
-            {"answer": "React.js can increase the application's performance with Virtual DOM.", 
-             "isCorrect": false },
-
-            {"answer": "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.", 
-             "isCorrect": false },
-            
-            {"answer": "React.js can render both on client and server side.", 
-             "isCorrect": false }, 
-
-            {"answer": "All the above", 
-             "isCorrect": true }
+            {
+                "answer": "React.js peut améliorer les performances de l'application avec le DOM virtuel.",
+                "isCorrect": false
+            },
+            {
+                "answer": "React.js est facile à intégrer avec d'autres frameworks tels que Angular, BackboneJS, car il s'agit uniquement d'une bibliothèque de vue.",
+                "isCorrect": false
+            },
+            {
+                "answer": "React.js peut rendre à la fois côté client et côté serveur.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Tout ce qui précède",
+                "isCorrect": true
+            }
         ]
     },
-
     {
         "id": "2",
-        "question": "Which of the following is not a disadvantage of React.js?",
+        "question": "Lequel des éléments suivants n'est pas un inconvénient de React.js ?",
         "options": [
-            {"answer": "React.js has only a view layer. We have put your code for Ajax requests, events and so on.", 
-             "isCorrect": false },
-
-            {"answer": "The library of React.js is pretty large.", 
-             "isCorrect": false },
-
-            {"answer": "The JSX in React.js makes code easy to read and write.", 
-             "isCorrect": true }, 
-
-            {"answer": "The learning curve can be steep in React.js.", 
-             "isCorrect": false }
-        ]        
+            {
+                "answer": "React.js n'a qu'une couche de vue. Nous devons mettre votre code pour les requêtes Ajax, les événements, etc.",
+                "isCorrect": false
+            },
+            {
+                "answer": "La bibliothèque de React.js est assez volumineuse.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Le JSX dans React.js rend le code facile à lire et à écrire.",
+                "isCorrect": true
+            },
+            {
+                "answer": "La courbe d'apprentissage peut être raide dans React.js.",
+                "isCorrect": false
+            }
+        ]
     },
-
     {
         "id": "3",
-        "question": "What of the following is used in React.js to increase performance?",
+        "question": "Quel élément suivant est utilisé dans React.js pour améliorer les performances ?",
         "options": [
-            {"answer": "Original DOM",
-             "isCorrect": false },
-
-            {"answer": "Virtual DOM",
-             "isCorrect": true },
-
-            {"answer": "Both A and B.",
-             "isCorrect": false }, 
-
-            {"answer": "None of the above.",
-             "isCorrect": true } 
+            {
+                "answer": "DOM d'origine",
+                "isCorrect": false
+            },
+            {
+                "answer": "DOM virtuel",
+                "isCorrect": true
+            },
+            {
+                "answer": "Les deux A et B.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Aucun des éléments ci-dessus.",
+                "isCorrect": true
+            }
         ]
     },
-
     {
         "id": "4",
-        "question": "What is the default port where webpack-server runs?",
+        "question": "Sur quel port par défaut s'exécute webpack-server ?",
         "options": [
-            {"answer": "3000",
-             "isCorrect": true },
-
-            {"answer": "8080",
-             "isCorrect": false },
-
-            {"answer": "3030",
-             "isCorrect": false }, 
-
-            {"answer": "6060",
-             "isCorrect": false } 
+            {
+                "answer": "3000",
+                "isCorrect": true
+            },
+            {
+                "answer": "8080",
+                "isCorrect": false
+            },
+            {
+                "answer": "3030",
+                "isCorrect": false
+            },
+            {
+                "answer": "6060",
+                "isCorrect": false
+            }
         ]
     },
-
     {
         "id": "5",
-        "question": "What are the two ways to handle data in React?",
+        "question": "Quelles sont les deux façons de gérer les données en React ?",
         "options": [
-            {"answer": "State & Props",
-             "isCorrect": true },
-
-            {"answer": "Services & Components",
-             "isCorrect": false },
-
-            {"answer": "State & Services",
-             "isCorrect": false }, 
-
-            {"answer": "State & Component",
-             "isCorrect": false } 
+            {
+                "answer": "State & Props",
+                "isCorrect": true
+            },
+            {
+                "answer": "Services & Components",
+                "isCorrect": false
+            },
+            {
+                "answer": "State & Services",
+                "isCorrect": false
+            },
+            {
+                "answer": "State & Component",
+                "isCorrect": false
+            }
         ]
     },
-
     {
         "id": "6",
-        "question": "What is a state in React?",
+        "question": "Qu'est-ce qu'un état (state) en React ?",
         "options": [
-            {"answer": "A permanent storage.",
-             "isCorrect": false },
-
-            {"answer": "Internal storage of the component.",
-             "isCorrect": true },
-
-            {"answer": "External storage of the component.",
-             "isCorrect": false }, 
-
-            {"answer": "None of the above.",
-             "isCorrect": false } 
+            {
+                "answer": "Un stockage permanent.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Stockage interne du composant.",
+                "isCorrect": true
+            },
+            {
+                "answer": "Stockage externe du composant.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Aucun des éléments ci-dessus.",
+                "isCorrect": false
+            }
         ]
-    }     
+    },
+    {
+        "id": "7",
+        "question": "Qu'est-ce que JSX dans React.js ?",
+        "options": [
+            {
+                "answer": "Une extension de fichier JavaScript.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Une syntaxe de balisage similaire à XML pour décrire les éléments de l'interface utilisateur.",
+                "isCorrect": true
+            },
+            {
+                "answer": "Une bibliothèque externe pour gérer les requêtes HTTP.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Un modèle de gestion de l'état dans React.",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "question": "Quelle est la principale caractéristique de l'ORM Eloquent dans Laravel ?",
+        "options": [
+            {
+                "answer": "Gestion des files d'attente.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Migration de base de données.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Gestion des relations de base de données de manière expressive.",
+                "isCorrect": true
+            },
+            {
+                "answer": "Intégration d'API RESTful.",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "question": "Quel est l'avantage de l'utilisation de conteneurs Docker par rapport à la virtualisation traditionnelle ?",
+        "options": [
+            {
+                "answer": "Consommation élevée de ressources système.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Isolation légère avec un partage du noyau du système d'exploitation.",
+                "isCorrect": true
+            },
+            {
+                "answer": "Configuration complexe des machines virtuelles.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Déploiement lent des applications.",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "question": "Qu'est-ce qu'Azure DevOps Pipeline ?",
+        "options": [
+            {
+                "answer": "Un service de gestion de base de données.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Un outil de suivi des bogues.",
+                "isCorrect": false
+            },
+            {
+                "answer": "Un service d'intégration et de déploiement continus.",
+                "isCorrect": true
+            },
+            {
+                "answer": "Un outil de gestion de projet Agile.",
+                "isCorrect": false
+            }
+        ]
+    }
 ]

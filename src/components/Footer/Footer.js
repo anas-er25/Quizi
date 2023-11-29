@@ -1,19 +1,13 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React from "react";
 
 export default function Footer() {
-    const github = "https://github.com/jsohndata/quizz-app";
+  return (
+    <footer className="text-center mt-5 text-white" style={{ backgroundColor: "rgba(226, 17, 139, 0.300)" }}>
+      <p>
+        Réalisé par &nbsp;&nbsp;<a href='https://www.linkedin.com/in/anas-er-rakibi/' className="contactus">ER-RAKIBI Anas </a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/abdelhadi-azelmad-2134b4295/" className="contactus"> AZELMAD Abdelhadi</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/rachid-allam-32b503298/" className="contactus"> ALLAM Rachid</a>
+      </p>
+    </footer>
+  );
+};
 
-    return (
-        <footer className="container">
-            <Row className="justify-content-md-center">
-                <Col md={6}>
-                    <a href={github} target="_blank" rel="noreferrer" >
-                        <img src="https://jsohndata.github.io/quizz-app/images/logo-github.svg" alt="Github" />
-                        <p><small>Code in Github</small></p>
-                    </a>
-                </Col>
-            </Row>
-        </footer>
-    )
-}
+

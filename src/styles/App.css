@@ -4,3 +4,92 @@
     margin-top: 10vh;
     padding: 0; 
 }
+body {
+  background-image: url("/public/images/bg-pexels-photo-1187974.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.quiz-card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-card ul li,
+.quiz-card button {
+  background-color: rgba(226, 17, 139, 0.3);
+  margin: 10px 10px 10px 0;
+  padding: 20px;
+  border: 1px solid rgb(183, 0, 255);
+  border-radius: 10px;
+  color: white;
+}
+
+.quiz-card ul li:hover,
+.quiz-card button:hover {
+  color: white;
+  background-color: rgba(226, 17, 139, 0.3);
+  border-color: white;
+  transform: scale(1.1);
+  transition: 0.3s;
+  filter: drop-shadow(0 0 10px rgb(151, 174, 221));
+}
+
+header h1 {
+  color: white;
+  font-weight: 200;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.quiz-card h2,
+.quiz-card p,
+.quiz-card p a {
+  color: white;
+}
+
+.quiz-card p a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.quiz-card h2 {
+  color: white;
+  margin: 20px 0px 40px 0px;
+}
+
+.quiz-card .score {
+  font-size: 2rem;
+}
+h2 {
+  color: white;
+}
+.question-text {
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+}
+.carousel-inner{
+  
+  display: flex !important;
+  justify-content: space-around !important;
+
+}
+.contactus{
+  color: white;
+  text-decoration: none;
+}
+
+.contactus:hover{
+  color: white;
+  font-size: clamp(1rem, 1vw);
+  font-weight: 600;  
+}

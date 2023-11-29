@@ -11,9 +11,9 @@ export default function useBgRandom() {
     return setBgImage(`url(${randomBgImg})`);
   }
   
-  useEffect(() => {
-    document.body.style.backgroundImage = bgImage;
-    }, [bgImage]);
+  // useEffect(() => {
+  //   document.body.style.backgroundImage = bgImage;
+  //   }, [bgImage]);
 
   // console.table({randomKey, randomBgImg, bgImage});
 

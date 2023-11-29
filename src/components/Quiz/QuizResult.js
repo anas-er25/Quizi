@@ -1,14 +1,21 @@
+import React from "react";
 import Col from "react-bootstrap/Col";
+import { useState } from "react";
 
-export default function QuizResult ({quizLength, score, handleReset}) {
+const QuizResult = ({ score, handleReset }) => {
+  const [questionsToShow, setQuestionsToShow] = useState(10);
 
   return (
+    <>
     <Col md={6} className="quiz-card text-center">
-      <h2>Your Result</h2>
-      <p>Thank you for taking the quiz! All quiz materials are from 
-        <a href="https://www.javatpoint.com/reactjs-mcq" target="_blank" rel="noreferrer">javatpoint.com/reactjs-mcq</a>.</p>
-      <p>You scored <span className="score">{score}</span> out of {quizLength}.</p>
-      <button onClick={handleReset}>Reset</button>
+      <button onClick={handleReset}>
+        <span className="score">{score}</span> / {questionsToShow} &nbsp;
+        Réinitialiser
+      </button>
     </Col>
+    <hr className="text-white"/>
+    </>
   );
-}
+};
+
+export default QuizResult;

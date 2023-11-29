@@ -1,16 +1,16 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Quiz from "./components/Quiz";
+import Header from "./components/Header/Header";
+import Quiz from "./components/Quiz/Quiz";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.css';
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="main-container">
-      <Header />
+    <>
+      <Header/>
       <Quiz />
-      <Footer />
-    </div>
+      <Footer/>
+    </>
   );
 }
 
